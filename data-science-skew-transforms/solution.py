@@ -11,7 +11,7 @@ def skewness(x: np.ndarray) -> float:
     """
     x=np.asarray(x,dtype=float)
     # TODO: Implement the formula from Theory.
-    std=np.std(x,ddof=0)
+    std=np.std(x)
     if std==0:
         return 0.0
     mean=np.mean(x)
